@@ -1,0 +1,867 @@
+/*global start*/
+li {
+  list-style: none;
+}
+
+a,
+button {
+  font-family: "Barlow", sans-serif;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #0C0B0B;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
+  color: #fff;
+  font-style: italic;
+  font-family: "EudoxusSans-Medium";
+}
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 75px;
+  color: #474747;
+  font-weight: 500;
+  font-family: "Barlow";
+}
+@media screen and (max-width: 575px) {
+  h2 {
+    font-size: 22px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 17px;
+  }
+}
+
+h3 {
+  font-size: 23px;
+  color: #474747;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media screen and (max-width: 1024px) {
+  h3 {
+    font-size: 19px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  color: #474747;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECFAFB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #474747;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  -webkit-filter: brightness(120%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-family: "Barlow";
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus {
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*global end*/
+/*header start*/
+header.site-header {
+  background: #474747;
+  font-size: 18px;
+  padding: 14px 0;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #0C0B0B;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  transition: 0.3s;
+  backdrop-filter: blur(15px);
+}
+
+header.site-header.sticky {
+  background: #474747;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+.site-header .site-nav ul li a.active {
+  color: #b19484;
+}
+
+.site-header .site-nav ul li a.active::after {
+  width: 100%;
+}
+
+.site-logo img {
+  width: 100%;
+  max-width: 180px;
+}
+
+.site-nav a {
+  padding: 8px 6px !important;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.2s linear;
+  color: #fff;
+}
+.site-nav a::after {
+  color: #fff;
+  position: absolute;
+  content: "";
+  background-color: #b19484;
+  height: 2px;
+  width: 0%;
+  top: 40px;
+  left: 0;
+  transition: all 0.2s linear;
+}
+.site-nav a:hover::after {
+  width: 100%;
+}
+
+.site-header {
+  padding: 10px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.closed-menu {
+  display: none;
+}
+
+.menu-toggle {
+  display: none !important;
+}
+
+/*header end*/
+/*banner-css-start*/
+.banner__section {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/homebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.banner__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.container {
+  height: 100%;
+}
+.container .row {
+  height: 100%;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.banner__text p {
+  color: #fff;
+}
+
+/*banner-css-end*/
+/*homecontent-css-start*/
+.homecontent {
+  padding: 50px 0 0 0;
+}
+.homecontent__text {
+  width: 100%;
+  text-align: center;
+}
+
+.homemain__text span {
+  font-size: 21px;
+  color: #b19484;
+}
+
+.raiting--bar i {
+  color: #b19484;
+  font-size: 18px;
+  margin: 0 4px;
+}
+
+i.fa-solid.fa-star.dot-loader.small {
+  font-size: 14px;
+}
+
+.dot-loader {
+  position: relative;
+  -webkit-animation: 2s grow ease-in-out infinite;
+  animation: 2s grow ease-in-out infinite;
+}
+
+.homecard__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 25px;
+}
+
+.homecard__content.right {
+  padding-left: 0;
+}
+
+.col-lg-6.cl-md-6.col-sm-12.center {
+  display: -webkit-flex;
+}
+
+section.homecard {
+  padding: 50px 0;
+}
+
+.homecard__picture img {
+  border-radius: 10px;
+}
+
+.homemain__text.card {
+  height: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: all 0.3s;
+}
+
+.travel__content {
+  padding: 20px;
+}
+
+.col-lg-4.col-md-6.col-sm-12.margin {
+  margin-bottom: 25px;
+}
+
+@keyframes grow {
+  40% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+.homecontent2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*homecontent-css-end*/
+/*neworleansbanner-css-start*/
+.orleans__banner {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/neworleanas-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.orleans__banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.banner__text p {
+  color: #fff;
+}
+
+.endtext__text {
+  padding-bottom: 20px;
+}
+
+/*neworleansbanner-css-end*/
+/*atlanticcity-banner-css-start*/
+.atlanticcity-banner {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/atlanticcity-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.atlanticcity-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.atlanticcard {
+  padding: 50px 0;
+}
+.atlanticcard h3 {
+  color: #b19484;
+}
+.atlanticcard p {
+  color: #0C0B0B;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 20px 0;
+}
+.atlanticcard__picture img {
+  max-width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+.atlanticcard__part {
+  max-width: 450px;
+  padding: 30px 0;
+  margin-left: 55px;
+}
+.atlanticcard__part h3 {
+  border-bottom: 1px solid #474747;
+}
+.atlanticcard__main {
+  display: flex;
+  gap: 20px;
+}
+
+.hotel-btn a {
+  display: inline-block;
+  background: #474747;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 13px 30px;
+  border: 1px solid #474747;
+}
+.hotel-btn a:hover {
+  border: 1px solid #474747;
+  background-color: transparent;
+  color: #474747;
+}
+
+.hotelcard__picture img {
+  max-width: 550px;
+  transform: rotateY(0);
+  transition: all 1s;
+  border-top-right-radius: 62px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 158px;
+}
+.hotelcard__picture img:hover {
+  border-radius: 0;
+}
+
+.hotel__numeric {
+  font-size: 30px;
+}
+
+.hotelcard__part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 85%;
+}
+
+.\.col-lg-6.col-md-6.col-sm-12.center {
+  display: -webkit-flex;
+}
+
+.row.flex-wrap-reverse.space {
+  margin: 30px 0;
+}
+
+/*atlanticcity-banner-css-end*/
+/*lasvegas-banner-css-start*/
+.Vegas-banner {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/lasvegas-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.Vegas-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.hotelcard__picture.flex img {
+  border-radius: 0;
+  transform: none;
+  max-width: 220px;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 20px;
+}
+
+/*lasvegas-banner-css-end*/
+/*bahamas-css-start*/
+section.bahamas__banner {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/bahamasbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+section.bahamas__banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.bahamas__content {
+  padding: 24px 0;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.bahamas__content h4 {
+  color: #b19484;
+  font-size: 18px;
+}
+.bahamas__content li {
+  font-size: 18px;
+  line-height: 25px;
+}
+.bahamas__picture {
+  position: relative;
+}
+.bahamas__picture img {
+  max-width: 500px;
+  transition: all ease-in 0.3s;
+  border: 3px solid #b19484;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.19);
+}
+.bahamas__picture img:hover {
+  transform: translateY(-10px);
+}
+
+.row.bahamas-space {
+  padding: 20px 0;
+}
+
+section.endtext.bahamas {
+  padding: 70px 0 0 0;
+}
+
+img.img-fluid.smallimage {
+  max-width: 270px;
+  padding: 7px;
+  position: absolute;
+  top: 85%;
+  right: -15%;
+  transform: translate(-50%, -50%);
+}
+
+/*bahamas-css-end*/
+/*abenteuerreisen-css-start*/
+.abenteuerreisen__banner {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/abenteuerreisenbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.abenteuerreisen__banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.equal-height {
+  margin: 0;
+  padding: 11px;
+}
+
+.site-heading.text-center {
+  padding: 25px 0;
+}
+
+.item {
+  padding: 30px;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.11);
+  margin: 0 0 10px;
+  position: relative;
+  background: #fff;
+  isolation: isolate;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item h4,
+.item p {
+  text-align: center;
+}
+.item:hover::after {
+  width: 100%;
+}
+.item::after {
+  content: "";
+  background: #b19484;
+  inset: 0;
+  width: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+.item:hover p,
+.item:hover h4,
+.item:hover i {
+  color: #fff;
+}
+.item:hover img {
+  filter: invert(1);
+}
+
+.item img {
+  width: 40px;
+  padding: 14px 0;
+}
+
+section.endtext.abenteuerreisen {
+  padding: 40px 0;
+}
+
+/*abenteuerreisen-css-end*/
+/*about-css-start*/
+section.aboutcontent {
+  padding: 50px 0;
+}
+
+.aboutbanner {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/aboutbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.aboutbanner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.aboutpic img {
+  max-width: 550px;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.homecontent__text.aboutright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: left;
+}
+
+/*about-css-end*/
+/*contact-css-start*/
+.contact__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/contactbanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.contact__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*contact-css-start*/
+/*privacy and policy*/
+.privacy__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/privacybanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.privacy__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.privacy-policy {
+  padding: 40px 0;
+}
+.privacy-policy .content-wrap li {
+  font-size: 17px;
+}
+
+.terms {
+  padding: 40px 0;
+}
+.terms .content-wrap li {
+  font-size: 17px;
+}
+
+/*privacy and policy*/
+/*terms-conditon start*/
+.terms__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/termsbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 70px;
+  isolation: isolate;
+}
+.terms__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*terms-conditon-end/
+
+/*footer-css-start*/
+.footer {
+  background: #474747;
+  padding: 20px 0;
+}
+.footer__logo img {
+  max-width: 160px;
+}
+.footer__about p {
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+}
+.footer__about h3 {
+  color: #b19484;
+}
+.footer__links li {
+  color: #fff;
+}
+.footer__links li a:hover {
+  color: #b19484;
+}
+.footer__links h3 {
+  color: #b19484;
+}
+.footer__mail a {
+  color: #fff;
+  font-size: 18px;
+}
+.footer__mail a:hover {
+  color: #fff;
+}
+.footer__mail h3 {
+  color: #b19484;
+}
+.footer__mail p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 34px;
+  margin-bottom: 0;
+}
+.footer .scrl-icons {
+  margin-top: 20px;
+}
+.footer .scrl-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b19484;
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background: #474747;
+  font-size: 22px;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+.footer .scrl-icons a:hover {
+  color: #474747;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/*footer-css-end*/
+/*cookie start*/
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  left: auto;
+  width: 100%;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+  width: 100%;
+}
+
+a.btn.btn-primary.accept-cookies {
+  background: #474747;
+  padding: 6px 22px;
+  font-size: 20px;
+  border: 1px solid #474747;
+}
+
+/*cookie end*/
+section.homecard .row {
+  margin-top: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

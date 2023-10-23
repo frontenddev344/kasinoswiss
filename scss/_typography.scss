@@ -1,0 +1,67 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: 'Barlow', sans-serif;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: $clr-black;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+    color: $clr-white;
+    font-style: italic;
+    font-family: "EudoxusSans-Medium";
+
+    @include mq(sm) {
+        font-size: 40px;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 75px;
+    color: $clr-darkblue;
+    font-weight: 500;
+    font-family: 'Barlow';
+
+    @include mq(sm) {
+        font-size: 22px;
+        line-height: 50px;
+    }
+
+    @include mq(xs) {
+        font-size: 17px;
+    }
+}
+
+h3 {
+    font-size: 23px;
+    color: $clr-darkblue;
+    font-weight: 500;
+    line-height: 30px;
+
+    @include mq(xl) {
+        font-size: 19px;
+    }
+}
+
+h4 {
+    font-size: 24px;
+    color: $clr-darkblue;
+    font-weight: 500;
+    line-height: 30px;
+}
