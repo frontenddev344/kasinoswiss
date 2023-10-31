@@ -958,6 +958,6 @@ section.homecard .row {
   transition: max-height 0.3s ease-in, padding 0.3s ease-in;  /* Add transition effect */
 }
 
-
-
-
+.top-text {
+  margin-bottom: 50px;
+}
