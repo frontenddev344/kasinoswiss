@@ -898,6 +898,12 @@ section.homecard .row {
 
 
 /* faq */
+.accordion button.accordion-button::after {
+  display: none !important;
+}
+.accordion .accordion-item button.accordion-button {
+  justify-content: space-between;
+}
 .accordion button.accordion-button {
   background: #af9282 !important;
   color: #fff !important;
@@ -929,7 +935,8 @@ section.homecard .row {
 
 .accordion-button i.icon {
   float: right;
-  color: #FF5A5F;
+  color: #ffffff;
+  font-size: 26px;
 }
 
 /* Updated Accordion Content Styles */
@@ -950,3 +957,7 @@ section.homecard .row {
   padding: 16px;  /* Reset the padding */
   transition: max-height 0.3s ease-in, padding 0.3s ease-in;  /* Add transition effect */
 }
+
+
+
+
