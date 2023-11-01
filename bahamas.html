@@ -109,6 +109,9 @@
                             </li>
                             <li>Luxuriöse Unterkünfte mit Blick auf das Meer oder den Hafen. </li>
                         </ul>
+                        <a href="https://www.atlantisbahamas.com/?utm_source=google&utm_medium=organic &utm_campaign=GMB_AtlantisBahamas"
+                            target="_blank" class="btn-bar">mehr
+                            sehen</a>
                     </div>
                 </div>
             </div>
@@ -122,6 +125,8 @@
                             </li>
                             <li>Hochwertige Einkaufs- und Gastronomiemöglichkeiten im Baha Mar-Komplex. </li>
                         </ul>
+                        <a href="https://bahamar.com/ " target="_blank" class="btn-bar">mehr
+                            sehen</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -151,6 +156,9 @@
                             <li>Privater Strandzugang und mehrere Swimmingpools.</li>
                             <li>Weltklasse-Spa- und Wellness-Einrichtungen. </li>
                         </ul>
+                        <a href="https://www.hyatt.com/en-US/hotel/thebahamas/grand-hyatt-baha-mar/nasgh/? src=corp_lclb_gmb_seo_nasgh"
+                            target="_blank" class="btn-bar">mehr
+                            sehen</a>
                     </div>
                 </div>
             </div>
@@ -164,6 +172,9 @@
                             </li>
                             <li>Exklusive kulinarische Erlebnisse und individueller Service.</li>
                         </ul>
+                        <a href="https://www.fourseasons.com/oceanclub/?utm_source=google&utm_medium=o rganicsearch&utm_campaign=tor-boc-hre-mid-seo-na&utm_content=na-na&utm_t erm=na "
+                            target="_blank" class="btn-bar">mehr
+                            sehen</a>
                     </div>
                 </div>
 
@@ -194,6 +205,8 @@
                             </li>
                             <li>Mehrere Restaurants und Bars vor Ort.</li>
                         </ul>
+                        <a href=" https://www.melia.com/de" target="_blank" class="btn-bar">mehr
+                            sehen</a>
                     </div>
                 </div>
             </div>
@@ -220,6 +233,65 @@
         </div>
     </section>
     <!-- site endtext end -->
+
+
+    <!-- faq -->
+    <div class="accordion">
+        <div class="container">
+            <div class="accordion-item">
+                <button class="accordion-button">
+                    <span>Welche Spiele sind in den Casinos auf den Bahamas verfügbar?</span>
+                    <i class="icon">+</i>
+                </button>
+                <div class="accordion-content">
+                    <p> Die meisten Casinos auf den Bahamas bieten eine Auswahl an Spielautomaten, Tischspielen wie
+                        Blackjack, Poker, Roulette und Craps sowie einige bieten auch Sportwetten und andere
+                        Unterhaltungsoptionen.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">
+                    <span> Gibt es Dresscodes für Casinos auf den Bahamas?</span>
+                    <i class="icon">+</i>
+                </button>
+                <div class="accordion-content">
+                    <p>Es gibt in der Regel keinen strengen Dresscode in den meisten Casinos auf den Bahamas, aber es
+                        ist ratsam, sich ordentlich und angemessen zu kleiden. Einige gehobene Casinos können jedoch
+                        spezifische Kleidervorschriften haben. </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">
+                    <span>Bieten die Casinos auf den Bahamas Treueprogramme für Spieler an?</span>
+                    <i class="icon">+</i>
+                </button>
+                <div class="accordion-content">
+                    <p> Einige Casinos auf den Bahamas bieten Treueprogramme oder Spielerclubs an, bei denen Spieler
+                        Punkte sammeln können, die gegen verschiedene Vorteile wie kostenloses Spiel oder
+                        Vergünstigungen in Restaurants eingetauscht werden können. Es ist ratsam, sich bei jedem Casino
+                        nach solchen Programmen zu erkundigen.
+
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">
+                    <span>Welche anderen Aktivitäten gibt es in der Nähe der Casinos auf den Bahamas?</span>
+                    <i class="icon">+</i>
+                </button>
+                <div class="accordion-content">
+                    <p> Die meisten Casinos auf den Bahamas befinden sich in oder in der Nähe von erstklassigen Resorts,
+                        die auch Zugang zu Stränden, Wassersport, Restaurants, Spa-Einrichtungen und anderen
+                        Freizeitaktivitäten bieten.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- faq -->
 
     <!-- site footer start -->
     <div class="footer">
@@ -309,6 +381,32 @@
             });
         });
     </script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        // Open the first accordion item by default
+        const firstContent = accordionButtons[0].nextElementSibling;
+        firstContent.classList.add('show');
+        const firstIcon = accordionButtons[0].querySelector('.icon');
+        firstIcon.textContent = '-';
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const content = this.nextElementSibling;
+
+                // Toggle the .show class to handle the transition
+                content.classList.toggle('show');
+
+                const icon = this.querySelector('.icon');
+                icon.textContent = icon.textContent === '+' ? '-' : '+';
+            });
+        });
+    });
+
+</script>
 </body>
 
 </html>
