@@ -22,12 +22,12 @@ h1 {
   font-style: italic;
   font-family: "EudoxusSans-Medium";
 }
+
 @media screen and (max-width: 575px) {
   h1 {
     font-size: 40px;
   }
 }
-
 h2 {
   font-size: 30px;
   line-height: 75px;
@@ -35,6 +35,7 @@ h2 {
   font-weight: 500;
   font-family: "Barlow";
 }
+
 @media screen and (max-width: 575px) {
   h2 {
     font-size: 22px;
@@ -46,19 +47,18 @@ h2 {
     font-size: 17px;
   }
 }
-
 h3 {
   font-size: 23px;
   color: #474747;
   font-weight: 500;
   line-height: 30px;
 }
+
 @media screen and (max-width: 1024px) {
   h3 {
     font-size: 19px;
   }
 }
-
 h4 {
   font-size: 24px;
   color: #474747;
@@ -70,9 +70,6 @@ h4 {
 @media screen and (max-width: 1199px) {
   .container {
     padding: 0 20px;
-  }
-  h3 {
-    font-size: 19px;
   }
   .site-logo img {
     max-width: 150px;
@@ -350,15 +347,6 @@ h4 {
   }
 }
 @media screen and (max-width: 575px) {
-  section.desktop-version {
-    display: none;
-  }
-  .mobile-view-design {
-    padding: 110px 0;
-  }
-  section.mobile-view {
-    display: block;
-  }
   .site-nav {
     width: 100%;
   }
@@ -436,15 +424,6 @@ h4 {
   section.endtext.bahamas {
     padding: 0;
   }
-  h2 {
-    font-size: 17px;
-  }
-  h3 {
-    font-size: 23px;
-    color: #474747;
-    font-weight: 500;
-    line-height: 30px;
-  }
 }
 @media screen and (max-width: 395px) {
   h1 {
@@ -455,6 +434,7 @@ h4 {
     line-height: 18px;
   }
 }
+
 
 
 /*# sourceMappingURL=responsive.css.map */
