@@ -366,7 +366,11 @@
 
 @media screen and (max-width:575px) {
     section.desktop-version {
-        display: block;
+        display: none;
+    }
+
+    .desktop-version {
+        display: none;
     }
 
     .mobile-view-design {
@@ -374,7 +378,7 @@
     }
 
     section.mobile-view {
-        display: none;
+        display: block;
     }
 
     .site-nav {
